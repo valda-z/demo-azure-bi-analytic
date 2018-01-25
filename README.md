@@ -1,4 +1,4 @@
-# Hlasovací portál s online vzhodnocováním dat
+# Hlasovací portál s online vyhodnocováním dat
 
 ??? Nějaký popis ???
 
