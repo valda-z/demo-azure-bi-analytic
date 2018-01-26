@@ -1,12 +1,18 @@
 # Hlasovací portál s online vyhodnocováním dat
 
-S využitím Microsoft Azure a Power BI jsme schopni vyhodnocovat data v reálném čase. Na architekturu se můžete podívat na níže uvedeném obrázku:
+S využitím Microsoft Azure a Power BI jsme schopni vyhodnocovat data v reálném čase. Celé video naleznete na odkazu www.aka.ms/hlasovani. 
+
+Po shlédnutí videa naleznete veškeré potřebné materiály níže (skripta pro funkce Yes/No, odkaz pro vygenerování QR kódů).
+
+Na tomto obrázku přehledné informace o architektuře a popis našeho řešení: 
 
 ![enter image description here](demo-azure-bi-analytic/architektura_hlasovani3.PNG)
 
+
+
 Function app nám slouží k tomu, aby https formát (funkce ano/ne pro hlasování, které máme napojené na gq kódy) převedla do textového formátu, který máme uložený v event hubu. Ten v sobě uchovává veškeré informace o našem hlasování. Stream analytics poté vezme naše data/informace ve formátu json a převede je do klasického xls formátu pomocí query. Power BI totiž pracuje pouze se strukturovanými daty databázového charakteru a právě díky konverzi z formátu json do xls můžeme data vizualizovat v Power BI. 
 
-Celé video naleznete na odkazu www.aka.ms/hlasovani 
+
 
 QR kódy pro URL funkcí vygenerujete na  http://goqr.me.
 
