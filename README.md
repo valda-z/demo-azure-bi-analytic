@@ -8,7 +8,6 @@ Veškeré materiály, včetně architektury, skript pro funkce Yes/No a odkazu n
 
 Function app nám slouží k tomu, aby https formát (funkce ano/ne pro hlasování, které máme napojené na gq kódy) převedla do textového formátu, který máme uložený v event hubu. Ten v sobě uchovává veškeré informace o našem hlasování. Stream analytics poté vezme naše data/informace ve formátu json a převede je do klasického xls formátu pomocí query. Power BI totiž pracuje pouze se strukturovanými daty databázového charakteru a právě díky konverzi z formátu json do xls můžeme data vizualizovat v Power BI. 
 
-QR kódy pro URL funkcí vygenerujete na  http://goqr.me.
 
 ### Kód funkce pro hlasování "YES"
 
@@ -35,6 +34,11 @@ module.exports = function (context, req) {
     context.done();
 };
 ```
+
+### QR kódy pro URL funkcí 
+
+QR kódy vygenerujte na http://goqr.me a napojte na url funkcí dle videa. 
+
 
 ### Kód SQL dotazu pro Stream Analytics
 
