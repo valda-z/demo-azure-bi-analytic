@@ -4,7 +4,7 @@ S využitím Microsoft Azure a Power BI jsme schopni vyhodnocovat data v reáln�
 
 [![Watch the video](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://youtu.be/i3a1E6k8I04)
 
-Veškeré materiály, včetně architektury, skript pro funkce Yes/No a odkazu na generátor qr kódů, naleznete v textu a na obrázku níže:
+Veškeré materiály, včetně architektury řešení, skript pro funkce Yes/No a odkazu na generátor qr kódů, naleznete v textu a na obrázku níže:
 
 ### Architektura
 
