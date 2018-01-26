@@ -6,7 +6,7 @@ Function app nám slouží k tomu, aby https formát (funkce ano/ne pro hlasová
 
 Celé video naleznete na odkazu www.aka.ms/hlasovani 
 
-Generate QR codes for functions URL in http://goqr.me 
+Abyste Generate QR codes for functions URL in http://goqr.me 
 
 ### Kód funkce pro hlasování "YES"
 
