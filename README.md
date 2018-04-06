@@ -65,3 +65,16 @@ FROM
     [fromeventhub]
 ```
 
+nebo tento typ dotazu:
+```sql
+SELECT
+    System.TimeStamp AS WindowEnd,
+    COUNT(*) as person,
+    SUM(CASE WHEN UPPER(vote)='YES' THEN 1 ELSE 0 END) as votesyes,
+    SUM(CASE WHEN UPPER(vote)='NO' THEN 1 ELSE 0 END) as votesno
+INTO
+    [topowerbi]
+FROM
+    [fromeventhub] TIMESTAMP BY created
+GROUP BY TumblingWindow(Duration(second, 5))  
+```
